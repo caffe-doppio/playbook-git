@@ -1,0 +1,34 @@
+# Dépôt de coordination du dossier La Mûrisserie.
+# Ne versionne que les documents transverses. Chaque chantier est un dépôt
+# autonome, avec son propre régime de confidentialité et sa propre licence.
+# Voir README.md et DECISIONS.md du chantier crm, D-005.
+
+# Système
+.DS_Store
+Thumbs.db
+._*
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Backlogs provisoires créés au fil du travail, où qu'ils soient.
+# Collectés vers rgpd.saas/.backlog/ par collect-backlog.py.
+.backlog/
+.backlog-*/
+
+# Contexte pour assistant de code, non versionné
+CLAUDE.md
+
+# Brouillons personnels
+brouillons/
+notes-perso/
